@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>UltimateSoccerSquadBuilder</display-name>
+  <welcome-file-list>
+		<welcome-file>QueryPlayers.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>RestfulCustomizedTeamServlet</servlet-name>
+		<servlet-class>squad.servlet.RestfulCustomizedTeamServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>RestfulSearchPlayerServlet</servlet-name>
+		<servlet-class>squad.servlet.RestfulSearchPlayerServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RestfulCustomizedTeamServlet</servlet-name>
+		<url-pattern>/customized-team/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>RestfulSearchPlayerServlet</servlet-name>
+		<url-pattern>/search-player/*</url-pattern>
+	</servlet-mapping>
+</web-app>

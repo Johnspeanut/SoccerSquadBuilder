@@ -1,0 +1,34 @@
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.1em;
+}
+
+.section-header {
+	padding: 10px 0 10px 0;
+	font-weight: bold;
+}
+
+body #update-customized-team-alert {
+	display: none;
+	z-index: 10;
+	position: fixed;
+	width: 50%;
+	height: 60px;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 30px;
+}
+
+.my-custom-scrollbar {
+	position: relative;
+	max-height: 300px;
+	overflow: auto;
+}
+
+.table-wrapper-scroll-y {
+	display: block;
+}
+
+.select-player-label {
+	display: none;
+}
